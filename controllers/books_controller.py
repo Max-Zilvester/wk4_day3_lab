@@ -22,7 +22,7 @@ def delete_book(id):
     return redirect('/books')
 
 # ----- EXTENSIONS ----- \ * Be able to create a new Book, * View a single Book
-@book_blueprint.route('/books', methods=["POST"])
+@books_blueprint.route('/books', methods=["POST"])
 def add_new_book():
     title = request.form['title']
     genre = request.form['genre']
